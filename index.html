@@ -1,0 +1,36 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>Login and Sign Up</title>
+    <link rel="stylesheet" href="style.css" />
+  </head>
+  <body>
+    <div class="container">
+      <form id="login-form">
+        <h2>Login</h2>
+        <input type="text" placeholder="Username" required />
+        <input type="password" placeholder="Password" required />
+        <button type="submit">Login</button>
+        <div class="switch-link">
+          <p>
+            Don't have an account? <a href="#" id="switch-to-signup">Sign Up</a>
+          </p>
+        </div>
+      </form>
+      <form id="signup-form" style="display: none">
+        <h2>Sign Up</h2>
+        <input type="text" placeholder="Username" required />
+        <input type="password" placeholder="Password" required />
+        <button type="submit">Sign Up</button>
+        <div class="switch-link">
+          <p>
+            Already have an account? <a href="#" id="switch-to-login">Login</a>
+          </p>
+        </div>
+      </form>
+    </div>
+    <script src="script.js"></script>
+  </body>
+</html>
